@@ -1,0 +1,69 @@
+Initialize engine version: 5.6.1f1 (2860b30f0b54)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 10.0]
+    Renderer: NVIDIA Quadro FX 1800 (ID=0x638)
+    Vendor:   NVIDIA
+    VRAM:     737 MB
+    Driver:   21.21.13.4201
+Begin MonoManager ReloadAssembly
+Platform assembly: F:\Alun\Unity\Will It Fall\will_it_fall_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading F:\Alun\Unity\Will It Fall\will_it_fall_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: F:\Alun\Unity\Will It Fall\will_it_fall_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading F:\Alun\Unity\Will It Fall\will_it_fall_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: F:\Alun\Unity\Will It Fall\will_it_fall_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading F:\Alun\Unity\Will It Fall\will_it_fall_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: F:\Alun\Unity\Will It Fall\will_it_fall_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading F:\Alun\Unity\Will It Fall\will_it_fall_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: F:\Alun\Unity\Will It Fall\will_it_fall_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading F:\Alun\Unity\Will It Fall\will_it_fall_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.224 seconds
+Platform assembly: F:\Alun\Unity\Will It Fall\will_it_fall_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: F:\Alun\Unity\Will It Fall\will_it_fall_Data\Managed\System.dll (this message is harmless)
+desktop: 1440x900 60Hz; virtual: 2880x900 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.112370 ms
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 3918 -> priority: 1 
+  Thread -> id: 391c -> priority: 1 
+  Thread -> id: 3920 -> priority: 1 
+  Thread -> id: 3924 -> priority: 1 
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.643058 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 289.
+Total: 0.216804 ms (FindLiveObjects: 0.026047 ms CreateObjectMapping: 0.018003 ms MarkObjects: 0.163178 ms  DeleteObjects: 0.008810 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.392240 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 289.
+Total: 0.196503 ms (FindLiveObjects: 0.022599 ms CreateObjectMapping: 0.017237 ms MarkObjects: 0.149005 ms  DeleteObjects: 0.007277 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.378068 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 289.
+Total: 0.196503 ms (FindLiveObjects: 0.023365 ms CreateObjectMapping: 0.017237 ms MarkObjects: 0.147856 ms  DeleteObjects: 0.007660 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.412159 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 289.
+Total: 0.216804 ms (FindLiveObjects: 0.026813 ms CreateObjectMapping: 0.018003 ms MarkObjects: 0.162795 ms  DeleteObjects: 0.008044 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.380366 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 289.
+Total: 0.271963 ms (FindLiveObjects: 0.032176 ms CreateObjectMapping: 0.019152 ms MarkObjects: 0.210293 ms  DeleteObjects: 0.009576 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.386112 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 289.
+Total: 0.202249 ms (FindLiveObjects: 0.021833 ms CreateObjectMapping: 0.017237 ms MarkObjects: 0.154368 ms  DeleteObjects: 0.008427 ms)
+
