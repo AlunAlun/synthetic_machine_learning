@@ -1,14 +1,13 @@
 '''
     File name: will_it_fall.py
     Author: Alun Evabs
-    Date created: 24/07/2013
-    Date last modified: 27/07/2013
+    Date created: 24/07/2017
+    Date last modified: 17/10/2017
     Python Version: 3.5
 '''
 
-TRAIN_FILE_NAME = "will_it_fall_train.txt" # 27000
-TEST_FILE_NAME = "will_it_fall_test.txt" # ~11000
-PROTOBUF_NAME = "./wif.ckpt"
+TRAIN_FILE_NAME = "data/will_it_fall_train.txt" # 27000
+TEST_FILE_NAME = "data/will_it_fall_test.txt" # ~11000
 
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL']='2' # stops tf warnings
@@ -115,11 +114,31 @@ print("Testing with [-0.7923625, 0.0, 0.6100528], result should be [26.60093]")
 an_input = array ( [-0.7923625, 0.0, 0.6100528] )
 a4d = an_input[np.newaxis] # convert to (1,3)
 
-#do the test by calling eval on output node
+# #do the test by calling eval on output node
 print( output.eval(feed_dict={x: a4d}, session=sess) ) 
 
+print("Saving checkpoint...")
 #save the graph
-#saver = tf.train.Saver()
-#saver.save(sess, './wif')
+saver = tf.train.Saver()
+save_path = saver.save(sess, "./output/model.ckpt")
+print("Done. Checkpoint saved in file: %s" % save_path)
+
+print("Writing protobuf...")
+
+with tf.Session(graph=tf.Graph()) as sess:
+	new_saver = tf.train.import_meta_graph('output/model.ckpt.meta', clear_devices=True)
+	new_saver.restore(sess, tf.train.latest_checkpoint('./output'))
+	
+	output_graph = "output/frozen_model.pb"
+
+	output_graph_def = tf.graph_util.convert_variables_to_constants(
+		sess, # The session is used to retrieve the weights
+	    tf.get_default_graph().as_graph_def(), # The graph_def is used to retrieve the nodes 
+	    ["X", "layer_7/h"] # The output node names are used to select the usefull nodes
+	) 
+
+	with tf.gfile.GFile(output_graph, "wb") as f:
+		f.write(output_graph_def.SerializeToString())
+	print("%d ops in the final graph." % len(output_graph_def.node))
 
 print("Done.")
